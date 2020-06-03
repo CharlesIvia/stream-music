@@ -7,11 +7,7 @@
 /* Body styling and positioning */
 
 body {
-  background-image: linear-gradient(
-    0deg,
-    rgba(247, 247, 247, 1) 23.8%,
-    rgba(252, 221, 221, 1) 92%
-  );
+  background-color: rgb(32, 31, 31);
 
   height: 100vh;
   display: flex;
@@ -118,13 +114,13 @@ body {
   position: absolute;
   top: 0;
   left: 20px;
+  right: 20px;
   width: calc(100% - 40px);
   padding: 10px 10px 10px 150px;
   opacity: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
-  margin-left: 5px;
   align-items: center;
   justify-self: center;
 }
@@ -151,7 +147,7 @@ body {
 }
 
 .progress {
-  background-color: #fe8daa;
+  background-color: #f54974;
   border-radius: 5px;
   height: 100%;
   width: 0%;
@@ -163,4 +159,6 @@ body {
 h1 {
   font-size: 38px;
   font-weight: 700;
+  color: white;
+  margin-bottom: 120px;
 }
