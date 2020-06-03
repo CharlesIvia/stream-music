@@ -11,11 +11,32 @@ const cover = document.getElementById("cover");
 
 //Set somg title
 
-const songs = ["hey", "summer", "ukulele"];
+const songs = [
+  "hey",
+  "summer",
+  "homecoming",
+  "blurred lines",
+  "ukulele",
+  "rainbow",
+  "bojangles",
+  "pombe sigara",
+  "la poupee",
+  "baby",
+  "darker",
+  "heaven-sent",
+  "bestfriend",
+  "awekening",
+  "go-on",
+  "royals",
+  "old town road",
+  "star",
+  "way-down",
+  "bang bang",
+];
 
 //Keep track of song
 
-let songIndex = 2;
+let songIndex = 4;
 
 //Load song details into DOM initialy
 
