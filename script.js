@@ -87,13 +87,30 @@ function setProgress(e) {
   audio.currentTime = (clickX / width) * duration;
 }
 
-// // Event listeners
-// playBtn.addEventListener("click", () => {
-//   const isPlaying = musicContainer.classList.contains("play");
+// Event listeners
+playBtn.addEventListener("click", () => {
+  const isPlaying = musicContainer.classList.contains("play");
 
-//   if (isPlaying) {
-//     pauseSong();
-//   } else {
-//     playSong();
-//   }
-// });
+  if (isPlaying) {
+    pauseSong();
+  } else {
+    playSong();
+  }
+});
+
+//Change song
+
+prevBtn.addEventListener("click", prevSong);
+nextBtn.addEventListener("click", nextSong);
+
+//Time/song update
+
+audio.addEventListener("timeupdate", updateProgress);
+
+//Click om progres bar
+
+progressContainer.addEventListener("click", setProgress);
+
+//Song ends
+
+audio.addEventListener("ended", nextSong);
