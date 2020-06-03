@@ -14,7 +14,6 @@ body {
   );
 
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +33,6 @@ body {
   position: relative;
   margin: 120px 0;
   z-index: 10;
- 
 }
 
 /* Image container styling */
@@ -126,6 +124,9 @@ body {
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   z-index: 0;
+  margin-left: 5px;
+  align-items: center;
+  justify-self: center;
 }
 
 .music-container.play .music-info {
