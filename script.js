@@ -2,6 +2,8 @@ const musicContainer = document.getElementById("music-container");
 const playBtn = document.getElementById("play");
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+// const favorite = document.querySelector(".fas");
+const heart = document.querySelector(".heart");
 
 const audio = document.getElementById("audio");
 const progress = document.getElementById("progress");
@@ -46,6 +48,7 @@ loadSong(songs[songIndex]);
 
 function loadSong(song) {
   title.innerText = song;
+  heart.classList.add("fas", "fa-heart");
   audio.src = `music/${song}.mp3`;
   cover.src = `images/${song}.jpg`;
 }
@@ -143,3 +146,9 @@ progressContainer.addEventListener("click", setProgress);
 //Song ends
 
 audio.addEventListener("ended", nextSong);
+
+//Like
+
+heart.addEventListener("click", (e) => {
+  heart.classList.toggle("liked");
+});
