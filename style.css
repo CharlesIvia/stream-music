@@ -128,12 +128,16 @@ body {
 .top {
   display: flex;
   justify-content: space-between;
-  padding: 0 15px;
+  padding: 0 5px;
 }
 
 .fa-heart {
   transition: all 0.3s ease-in-out;
   pointer-events: all;
+}
+
+.liked {
+  color: red;
 }
 .fa-heart:hover,
 .fa-heart:focus:active {
