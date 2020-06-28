@@ -116,7 +116,7 @@ body {
   left: 20px;
   right: 20px;
   width: calc(100% - 40px);
-  padding: 10px 10px 10px 150px;
+  padding: 10px 10px 10px 15px;
   opacity: 0;
   transform: translateY(0%);
   transition: transform 0.3s ease-in, opacity 0.3s ease-in;
@@ -125,6 +125,21 @@ body {
   justify-self: center;
 }
 
+.top {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.fa-heart {
+  transition: all 0.3s ease-in-out;
+  pointer-events: all;
+}
+.fa-heart:hover,
+.fa-heart:focus:active {
+  color: red;
+  transform: scale(1.1);
+}
 .music-container.play .music-info {
   opacity: 1;
   transform: translateY(-100%);
